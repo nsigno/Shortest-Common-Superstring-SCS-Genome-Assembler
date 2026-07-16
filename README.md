@@ -3,7 +3,7 @@
 Modular Python DNA assembler that reconstructs a superstring of DNA extracted from a FASTA file using graph theory and no additional libraries.
 
 ## Project Overview
-The project is modeled as an asymmetric TSP, using a dummy node to convert a linear path into a cycle
+The project is modeled as an asymmetric TSP, using a dummy node to convert a linear path into a cycle.
 A path represents the order in which strings must be assembled to form the superstring, and the optimal TSP path corresponds to the SCS.
 - `dna_processing` contains the functions needed to convert a FASTA file into a DNA array and to make an adjacency matrix based on the suffix-prefix overlap length.
 - `tsp_solver` contains a general solver for the ATSP problem modified to remove the dummy node and get a path.
